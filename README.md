@@ -1,6 +1,7 @@
 # AGENT API
 
 FastAPI Backend-проект з запитами до агента Claude API з можливими tools
+
 **Стек:** Python 3.12 · FastAPI · Claude API · ChromaDB
 
 ## Швидкий старт
