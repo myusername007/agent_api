@@ -26,6 +26,7 @@ async def run_agent(user_message: str) -> str:
             
             for block in response.content:
                 if block.type == "tool_use":
+                    print(f">>> Calling: {block.name}({block.input})")
                     if block.name == "get_weather":
                         result = get_weather(**block.input)
                     elif block.name == "search_documents":
